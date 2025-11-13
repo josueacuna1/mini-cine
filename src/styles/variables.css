@@ -1,0 +1,27 @@
+:root {
+  --bg: #282b31;
+  --surface: #121418;
+  --card: #1A1D22;
+  --divider: #262A33;
+  --text: #EAECEE;
+  --text-2: #B8C0CC;
+  --text-muted: #8A93A3;
+  --teal-700: #074F57;
+  --teal-500: #0FA3B1;
+  --teal-200: #A9E5D9;
+  --sand-200: #EED9A7;
+  --amber-500: #F4A300;
+  --amber-700: #CB6A00;
+  --success: #3BB273;
+  --warning: var(--amber-500);
+  --error: #E45050;
+  --info: var(--teal-500);
+  --ring: rgba(15,163,177,0.35);
+  --hover: rgba(255,255,255,.06);
+  --press: rgba(255,255,255,.1);
+  --ff: "Century Gothic", "CenturyGothic", "URW Gothic", "Gothic A1", Montserrat, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-1: 0 6px 18px rgba(0,0,0,.25);
+}

@@ -1,0 +1,226 @@
+.dashboard {
+  display: grid;
+  gap: 24px;
+}
+
+.db-card {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 12px;
+}
+
+.db-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.db-card__title { 
+  margin: 0; 
+  font-size: 1.1rem; 
+  font-weight: 700; 
+  letter-spacing: .3px; 
+}
+
+.db-card__meta  { 
+  color: var(--text-muted); 
+  font-size: 15px; 
+}
+
+.db-week {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
+}
+
+.db-week strong { font-weight: 700; }
+
+.db-days {
+  display: grid;
+  gap: 16px;
+}
+
+.db-dayCard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.roomCard__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.roomCard__title { font-weight: 700; }
+
+.roomCard__pct {
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.roomCard__bar {
+  height: 8px;
+  background: #20242C;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  border: 1px solid var(--divider);
+}
+
+.roomCard__barFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal-500), var(--amber-500));
+  transition: width .25s ease;
+}
+
+.roomCard__info {
+  font-size: 15px;
+  color: var(--text-2);
+  display: grid;
+  gap: 2px;
+}
+
+.roomCard__list {
+  margin-top: 8px;
+  padding-left: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.totals {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.totals__label { font-weight: 700; }
+
+.roomCard__barStack {
+  height: 10px;
+  display: flex;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #20242C;
+  border: 1px solid var(--divider);
+  margin-bottom: 6px;
+}
+
+.roomCard__seg { height: 100%; }
+
+.roomCard__seg--occ {
+  background: linear-gradient(90deg, var(--teal-500), #3ad0c9);
+}
+
+.roomCard__seg--idle {
+  background: linear-gradient(90deg, #2a2f3a, #232833);
+}
+
+.roomCard__legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-2);
+  font-size: 12.5px;
+  margin-bottom: 8px;
+}
+
+.roomCard__legend .spacer { flex: 1; }
+
+.dot {
+  display: inline-block;
+  width: 10px; height: 10px; border-radius: 50%;
+  margin-right: 6px;
+}
+.dot--occ { background: var(--teal-500); }
+
+.dot--idle { background: #2a2f3a; }
+
+.roomCard__metrics { 
+  display: grid; 
+  gap: 8px; 
+  margin-bottom: 8px; 
+}
+
+.metric__label {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.metric__bar {
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #20242C;
+  border: 1px solid var(--divider);
+}
+
+.metric__fill { height: 100%; transition: width .25s ease; }
+
+.metric__fill--usage {
+  background: linear-gradient(90deg, var(--teal-500), var(--amber-500));
+}
+
+.metric__fill--shows {
+  background: linear-gradient(90deg, var(--amber-500), var(--amber-700));
+}
+
+.metric__fill--capacity {
+  background: linear-gradient(90deg, #8fded7, var(--teal-500));
+}
+
+.db-weekChart {
+  height: 240px;
+  margin-top: 12px;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  padding: 8px;
+  box-shadow: var(--shadow-1);
+}
+
+.db-metricTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.db-tab {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease, transform .1s ease;
+}
+
+.db-tab:hover {
+  background: rgba(244,163,0,.12);
+  border-color: var(--amber-500);
+  color: var(--amber-500);
+  transform: translateY(-1px);
+}
+
+.db-tab.active {
+  background: linear-gradient(135deg, var(--sand-200), var(--amber-500) 60%, var(--amber-700));
+  color: #101216;
+  border-color: var(--amber-500);
+}
+
+@media (max-width: 600px) {
+  .db-week { gap: 12px; }
+  .totals { gap: 12px; }
+}

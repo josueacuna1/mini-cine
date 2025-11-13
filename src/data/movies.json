@@ -1,0 +1,7 @@
+[
+  { "id": "m1", "title": "Medianoche", "runtimeMin": 105, "rating": "B15", "type": "REGULAR", "demandScore": 62 },
+  { "id": "m2", "title": "Zombies vs Robots", "runtimeMin": 128, "rating": "A", "type": "SPECIAL", "demandScore": 75 },
+  { "id": "m3", "title": "Avenida 28", "runtimeMin": 142, "rating": "B", "type": "PREMIERE", "demandScore": 81 },
+  { "id": "m4", "title": "Sombras del Norte", "runtimeMin": 156, "rating": "C", "type": "REGULAR", "demandScore": 55 },
+  { "id": "m5", "title": "El regreso", "runtimeMin": 98,  "rating": "A", "type": "REGULAR", "demandScore": 34 }
+]

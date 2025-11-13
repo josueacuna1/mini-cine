@@ -1,0 +1,5 @@
+[
+  { "id": "S1", "name": "Sala 1", "size": "LARGE", "seats": 200 },
+  { "id": "S2", "name": "Sala 2", "size": "MEDIUM", "seats": 120 },
+  { "id": "S3", "name": "Sala 3", "size": "SMALL", "seats": 80 }
+]

@@ -1,0 +1,202 @@
+.catalog-panel {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 220px);
+  gap: 20px;
+  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  margin: 12px 0 16px;
+}
+
+.catalog-panel__card {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1rem;
+  display: grid;
+  gap: .5rem;
+}
+
+.catalog-panel__label {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.catalog__input,
+.catalog__select {
+  width: 100%;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: .55rem .75rem;
+  font-family: var(--ff);
+  font-weight: 600;
+  font-size: 15px;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.catalog__select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--amber-500) 50%),
+    linear-gradient(135deg, var(--amber-500) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.2rem) center,
+    calc(100% - 1rem) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.catalog__input:hover,
+.catalog__select:hover {
+  border-color: var(--teal-500);
+  background-color: #181a1f;
+}
+
+.catalog__input:focus,
+.catalog__select:focus {
+  outline: none;
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.catalog-panel input[type="range"] {
+  width: 100%;
+  accent-color: var(--teal-500);
+  background: transparent;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  padding: .85rem 1rem;
+  box-shadow: var(--shadow-1);
+  transition: background .12s ease, border-color .12s ease, transform .12s ease;
+}
+
+.movie-card:hover {
+  background: #181a1f;
+  border-color: #2E3440;
+  transform: translateY(-1px);
+}
+
+.movie-card header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.movie-title {
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.movie-meta {
+  color: var(--text-2);
+  font-size: 15px;
+  display: grid;
+  gap: 2px;
+}
+
+.movie-meta span {
+  color: var(--text-muted);
+}
+
+.movie-badges {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  color: var(--text-2);
+  transition: transform .1s ease, box-shadow .15s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 6px rgba(244, 163, 0, 0.25);
+}
+
+.badge.premiere {
+  background: linear-gradient(135deg,#f9e6b3 0%,#f4a300 45%,#c56a00 100%);
+  color: #101216;
+  border: none;
+  box-shadow: 0 0 6px rgba(244, 163, 0, 0.4);
+}
+
+.badge.special {
+  background: linear-gradient(135deg,#4de3d0 0%,#2ab7a6 40%,#f4a300 100%);
+  color: #101216;
+  border: none;
+  box-shadow: 0 0 6px rgba(77, 227, 208, 0.45);
+}
+
+.badge.regular {
+  background: linear-gradient(135deg,#3fd2e0 0%,#1ca9ad 40%,#0d7a7a 75%,#064f4f 100%);
+  color: #101216;
+  border: none;
+  box-shadow: 0 0 6px rgba(63, 210, 224, 0.45);
+}
+
+.badge.high {
+  background: linear-gradient(135deg,#ffb347 0%,#ff7b00 40%,#e53900 75%,#b71c1c 100%);
+  color: #101216;
+  border: none;
+  box-shadow: 0 0 8px rgba(255, 123, 0, 0.45);
+}
+
+select option {
+  background-color: var(--card);
+  color: var(--text);
+  font-family: var(--ff);
+}
+
+select option:hover {
+  background-color: rgba(244, 163, 0, 0.18);
+  color: var(--text);
+}
+
+select option:checked {
+  background-color: var(--amber-500);
+  color: #101216;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .catalog-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .catalog-panel {
+    grid-template-columns: 1fr;
+  }
+}

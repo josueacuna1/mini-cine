@@ -1,0 +1,466 @@
+.planner {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 2rem;
+}
+
+.planner__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.planner__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  padding: .25rem 0;
+}
+
+.planner__config {
+  margin: 1.5rem 0;
+}
+
+.planner__configCard {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1.25rem 1rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.planner__configHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: .25rem;
+}
+
+.planner__configTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.planner__configGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.planner__controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+
+.planner__controlCard {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1rem;
+}
+
+.planner__label {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.planner__form {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1.25rem 1rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.planner__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: .25rem;
+}
+
+.planner__row--dual { grid-template-columns: 2fr 1fr 1fr auto; }
+
+.planner__help {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.planner__form .input,
+.planner__form .select { width: 100%; }
+
+.planner__btn {
+  padding: .55rem .9rem;
+  border-radius: var(--radius-lg);
+}
+
+.planner__alerts { margin-top: 4px; }
+
+.planner__scheduleCard {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1.25rem 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.planner__scheduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--divider);
+  margin-bottom: .75rem;
+}
+
+.planner__scheduleTitle { font-weight: 700; }
+
+.planner__scheduleMeta { color: var(--text-muted); font-size: 15px; }
+
+.planner__list {
+  display: grid;
+  gap: 1rem;
+  padding: .5rem 0;
+}
+
+.planner__item {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: .85rem 1rem;
+  transition: background .12s ease, border-color .12s ease, transform .12s ease;
+}
+
+.planner__item:hover {
+  background: #181a1f;
+  border-color: #2E3440;
+  transform: translateY(-1px);
+}
+
+.planner__time {
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-align: center;
+  background: rgba(15,163,177,.12);
+  border: 1px solid var(--teal-500);
+  color: var(--text);
+  border-radius: var(--radius-md);
+  padding: 6px 8px;
+}
+
+.planner__info { display: grid; gap: 2px; }
+
+.planner__movie { font-weight: 700; }
+
+.planner__sub { color: var(--text-muted); font-size: 15px; }
+
+.planner__actions { display: inline-flex; gap: 6px; }
+
+.planner__iconBtn {
+  background: transparent;
+  border: 1px solid var(--divider);
+  color: var(--text-2);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background .12s ease, border-color .12s ease, color .12s ease;
+}
+
+.planner__iconBtn:hover {
+  background: var(--hover);
+  border-color: var(--teal-500);
+  color: var(--text);
+}
+
+.planner__iconBtn--danger:hover {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.planner__summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1rem;
+}
+
+.planner__tile {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: var(--shadow-1);
+}
+
+.planner__tileLabel {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.planner__tileValue { 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+}
+
+.planner__daySelector {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+
+.planner__dayBtn {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--divider);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--ff);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .1s ease;
+}
+
+.planner__dayBtn:hover {
+  background: rgba(244,163,0,.12);
+  border-color: var(--amber-500);
+  color: var(--amber-500);
+  transform: translateY(-1px);
+}
+
+.planner__dayBtn.is-active {
+  background: linear-gradient(135deg, var(--sand-200), var(--amber-500) 60%, var(--amber-700));
+  border-color: var(--amber-500);
+  color: #101216;
+  font-weight: 700;
+  transform: translateY(0);
+  box-shadow: 0 0 6px rgba(244,163,0,.3);
+}
+
+.planner__empty {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-lg);
+  padding: 10px;
+  color: var(--text-2);
+  box-shadow: var(--shadow-1);
+}
+
+.planner__moviePicker, 
+.planner__roomSelector { width: 100%; }
+
+.planner__select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: .55rem 2rem .55rem .75rem;
+  font-family: var(--ff);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--amber-500) 50%),
+    linear-gradient(135deg, var(--amber-500) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.2rem) center,
+    calc(100% - 1rem) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.planner__select:hover { 
+  border-color: var(--teal-500);
+  background-color: #181a1f; 
+}
+
+.planner__select:focus {
+  outline: none;
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.planner__select option {
+  background: var(--card);
+  color: var(--text);
+  font-family: var(--ff);
+  font-weight: 500;
+}
+
+.planner__select:focus-visible { outline: none; }
+
+.planner__select:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  background: var(--divider);
+  color: var(--text-muted);
+}
+
+.planner__timePicker {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.planner__timeInput {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: .45rem .75rem;
+  font-family: var(--ff);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  width: 150px;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.planner__timeInput:hover { 
+  border-color: var(--teal-500); 
+  background-color: #181a1f; 
+}
+
+.planner__timeInput:focus {
+  outline: none;
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.planner__timeHint {
+  color: var(--text-muted);
+  font-size: 15px;
+  letter-spacing: .2px;
+}
+
+.planner__alertsList {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.planner__alertItem {
+  font-family: var(--ff);
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 8px;
+  color: var(--text);
+  letter-spacing: .2px;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  transition: background .2s ease, color .2s ease;
+}
+
+.planner__alertItem.is-error {
+  color: var(--error, #b00020);
+  background: rgba(176,0,32,.12);
+  border-left: 4px solid var(--error, #b00020);
+}
+
+.planner__alertItem.is-warn {
+  color: var(--amber-600, #b35b00);
+  background: rgba(244,163,0,.12);
+  border-left: 4px solid var(--amber-500);
+}
+
+.planner__alertLabel { 
+  font-weight: 700; 
+  margin-right: 4px; 
+}
+
+.planner__item.is-editing {
+  outline: 2px solid var(--amber-500);
+  outline-offset: 2px;
+  opacity: 0.95;
+}
+
+.planner__item.is-editing .planner__iconBtn {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.planner__confirm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(244, 163, 0, 0.1);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+}
+
+.planner__confirm span {
+  flex-grow: 1;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.planner__item.is-editing .planner__confirm .planner__iconBtn {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
+.planner__confirm .planner__iconBtn:hover {
+  background: var(--hover);
+  border-color: var(--teal-500);
+  color: var(--text);
+}
+
+.planner__confirm .planner__iconBtn--danger:hover {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+@media (max-width: 880px) {
+  .planner__controls { grid-template-columns: 1fr; }
+  .planner__row { grid-template-columns: 1fr 1fr auto; }
+  .planner__row--dual { grid-template-columns: 1fr 1fr 1fr auto; }
+  .planner__item { grid-template-columns: 100px 1fr auto; }
+  .planner__summary { grid-template-columns: 1fr 1fr; }
+  .planner__configGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .planner__row, .planner__row--dual { grid-template-columns: 1fr; }
+  .planner__item { grid-template-columns: 1fr; gap: 6px; }
+  .planner__actions { justify-content: flex-end; }
+}

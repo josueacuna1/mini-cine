@@ -1,0 +1,24 @@
+.view-switch {
+  position: relative;
+  min-height: 200px;
+}
+
+.view-animate {
+  animation: fadeSlideIn 220ms cubic-bezier(.22,1,.36,1);
+  will-change: opacity, transform;
+}
+
+.nav-btn {
+  transition: color .2s ease, transform .15s ease, background .2s ease;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
