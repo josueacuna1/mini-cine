@@ -404,7 +404,7 @@ Martes + SPECIAL → `ERROR`- `Las funciones SPECIAL sólo pueden programarse de
 
 ---
 
-#### Estrenos PREMIERE (premiere.ts)
+### Estrenos PREMIERE (premiere.ts)
 Condición: Las peliculas tipo **PREMIERE** deben estrenarse los dias **Jueves** con al menos dos funciones y ser tipo **PREMIERE**.
 Tipo: `WARN`.
 
@@ -415,7 +415,7 @@ Jueves + 2 funciones → `OK`
 
 ---
 
-#### Alta demanda (high-demand.ts)
+### Alta demanda (high-demand.ts)
 Condición: Si demandScore ≥ 70, la primera función debe iniciar antes de 14:00.
 Tipo: `ERROR`.
 
@@ -425,7 +425,7 @@ Ejemplo:
 
 ---
 
-#### Ventana diaria (time-window.ts + useScheduleMetrics)
+### Ventana diaria (time-window.ts + useScheduleMetrics)
 Condición: Para el **dashboard**, los minutos libres/ocupados solo se contabilizan dentro del rango del día, comprendiendo 10:00–24:00.
 
 Funciones fuera de rango no afectan los cálculos de tiempo libre.
