@@ -1,6 +1,6 @@
 # Mini-Cine — Documentación Técnica
 ---
-## Menu
+## Menú
 - [Descripción general](#descripción-general)
 - [Stack tecnológico](#stack-tecnológico)
 - [Puesta en marcha](#puesta-en-marcha)
